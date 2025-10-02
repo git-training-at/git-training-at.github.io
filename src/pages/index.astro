@@ -1,11 +1,142 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+  <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 prose mt-4">
+    <h1 class="text-2xl md:text-3xl">Git Trainings in Wien, Österreich und Deutschland</h1>
+
+    <ul>
+      <li>Sie stehen vor dem Umstieg von SVN zu Git?</li>
+      <li>
+        Ihr Team möchte ein modernes Versionskontrollsystem verwenden, um den Entwicklungsprozess zu vereinfachen und zu
+        beschleunigen?
+      </li>
+      <li>Ihre Entwicklungsabteilung meint, es gäbe zuviele Branches, und Git sei die Lösung?</li>
+      <li>Und was hat das alles mit GitHub zu tun?</li>
+    </ul>
+
+    <blockquote>Sie müssen Git nicht studiert haben, um es erfolgreich zu verwenden.</blockquote>
+
+    <p>
+      Wir führen Git-Trainings für Einsteiger und Fortgeschrittene in ganz Europa für Teams von bis zu 25 Personen durch
+      - wahlweise in Deutsch oder Englisch.
+    </p>
+
+    <p>
+      Die Mitglieder ihres Teams holen wir dort ab, wo sie stehen. Egal, ob das<br />
+
+      <ul>
+        <li>
+          der Open-Source-affine Entwickler ist, der in der Freizeit bereits erste Erfahrungen mit Git und GitHub
+          gesammelt hat,
+        </li>
+        <li>der erfahrene Engineer, der bereits mit RCS, CVS und SVN gearbeitet hat, oder</li>
+        <li>der Junior, der sich gerade zum ersten Mal praktisch mit dem Thema Versionskontrolle auseinandersetzt.</li>
+      </ul>
+    </p>
+    <p>
+      Für unser Einsteiger-Training sind sie idealerweise noch nicht oder erst kürzlich auf Git umgestiegen. Hat ihr
+      Team bereits Erfahrungen mit Git gesammelt und möchte den Entwicklungsprozess weiter optimieren, erstellen wir mit
+      ihnen gemeinsam maßgeschneiderte Trainingsinhalte.
+    </p>
+
+    <h2>Inhalte</h2>
+
+    <h3>Basics & Internals</h3>
+
+    <p>Je nachdem, wo wir ihr Team abholen dürfen, halten wir diesen Einführungsteil kürzer oder länger.</p>
+
+    <p>
+      Wir nähern uns Git dabei von 2 Seiten:
+
+      <ul>
+        <li>Zuerst <i>Top-Down</i> für die häufigsten Anwendungsfälle, und danach</li>
+        <li>
+          <i>Bottom-Up</i>, um wirklich zu verstehen was da hinter den Kulissen geschieht und um das benötigte
+          Hintergrundwissen für die Git Power-Moves zu vermitteln.
+        </li>
+      </ul>
+    </p>
+
+    <h3>Usecases</h3>
+
+    <p>
+      Nachfolgend
+      <ul>
+        <li>sprechen wir über Git-spezifische Techniken und Kommandos,</li>
+        <li>demonstrieren anhand von cleveren Beispielen deren Funktionsweise und Besonderheiten,</li>
+        <li>sprechen über Best Practices in der Industrie und</li>
+        <li>zeigen Umsteigern die Unterschiede zu bisherigen Versionskontrollsystemen auf.</li>
+      </ul>
+    </p>
+
+    <h3>Git Workflow</h3>
+    <p>
+      Unsere Trainingserfahrung zeigt, dass viele Teams ihr zuvor eingesetztes Versionskontrollsystem durch Git
+      ersetzen, ohne gleichzeitig ihr Entwicklungsmodell zu überdenken - die durch den Einsatz von Git entstehenden
+      Chancen auf Vereinfachung von Prozessen und Produktivitätssteigerung werden dadurch nicht genutzt. Es ist uns
+      wichtig zu vermitteln, dass Git nicht bloß "SVN++" ist, sondern viel mehr als das: Git fördert mit seinem radikal
+      neuen Branching-Modell einen dramatisch produktiveren Workflow in der Funktionsentwicklung. Den dritten Block
+      unseres Trainings widmen wir daher ganz dem Thema "Workflow":
+
+      <ul>
+        <li>
+          Ausgehend von einfachen, SVN-basierten Modellen entwicklen wir Schritt für Schritt das als "Git Flow" bekannte
+          Branching Modell, das in vielen Teams sehr erfolgreich eingesetzt wird.
+        </li>
+        <li>Wir zeigen dazu Real-World Beispiele im Detail und</li>
+        <li>besprechen konkret, wie ihr Team Releases und Featureentwicklung mit Git gewinnbringend managen kann.</li>
+      </ul>
+    </p>
+    <h3>Zum Ausklang…</h3>
+    <p>
+      …zeigen wir noch bewährte Tipps und Tricks, die wir uns über die Jahre hinweg angeeignet haben und weisen auf
+      Stolpersteine hin, von denen Teams in unseren bisherigen Trainings berichtet haben.
+      <br /><br />
+      Eine ausgiebige Q+A Session schließt das Training ab.
+    </p>
+
+    <h3>Die Trainer</h3>
+    <p>
+      <a href="https://fritzgrabo.com">Fritz</a> und <a href="https://christoph.luppri.ch">Christoph</a>, zwei
+      Freelancer aus Wien und Umgebung: Wir verwenden Git täglich, erfolgreich, als Profis: Mal um kleine Privatprojekte
+      zu managen, im Team mit anderen Entwicklern rund um den Erdball, für sicherheitskritische Projekte in KMUs, oder
+      auf GitHub, um bei Open-Source Projekten mitzuarbeiten.
+    </p>
+
+    <h3>Was kostet es?</h3>
+
+    <p>
+      Wir berechnen die Trainingsstunden als Pauschale für ihr gesamtes Entwicklungsteam (für bis zu 25 Personen). Falls
+      erforderlich, kommen Anreise und Übernachtung hinzu.
+    </p>
+
+    <div class="flex justify-center">
+      <a
+        href="mailto:fritz-und-christoph@git-training.at"
+        class="px-8 py-4 bg-lime-600 no-underline text-white rounded-sm hover:bg-lime-700 transition duration-300"
+      >
+        Kontaktieren Sie uns für ein Angebot!
+      </a>
+    </div>
+
+    <h3>Testimonials</h3>
+
+    <blockquote>
+      The presenters took what could have been a dry subject and injected enthusiasm and life to it. Very engaging,
+      thank you!
+    </blockquote>
+    <blockquote>Seriously, these guys were good and the information very useful.</blockquote>
+    <blockquote>Excellent introduction to Git with knowledgeable and friendly instructors.</blockquote>
+    <p>
+      Zitate aus der internen Umfrage zur Qualitätssicherung nach unseren Trainings für Qualcomm in Wien (AT), Cambridge
+      und Poole (UK).
+    </p>
+
+    <footer class="text-sm text-gray-400 text-center my-8">&copy; 2014-2025 Fritz Grabo und Christoph Lupprich</footer>
+  </div>
 </Layout>
