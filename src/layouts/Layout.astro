@@ -1,25 +1,39 @@
 ---
 import "../styles/global.css";
 import "@fontsource-variable/inter";
+
+const { title, description } = Astro.props;
+
+const canonicalURL = 'https://git-training.at';
+const siteName = 'Git Trainings in Wien, Österreich und Deutschland';
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="de">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <title>{title}</title>
+    <link rel="canonical" href={canonicalURL} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:site_name" content={siteName} />
+    <meta property="og:locale" content="de" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:url" content={canonicalURL} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="keywords" content="git training wien, git training, git training österreich, git training deutschland" />
+
     <meta name="google-site-verification" content="7OvHhnrgV7Wct9c5QwNoveyeqIEk_0cNZRKWStPW7tg" />
-    <meta
-      name="description"
-      content="Wir bieten Git Trainings in Wien, Österreich und Deutschland für Um- und Einsteiger von Subversion und anderen Versionskontrollsystemen an."
-    />
-    <meta
-      name="keywords"
-      content="git training wien, git training, git training österreich, git training deutschland"
-    />
-    <title>Git Trainings in Wien, Österreich und Deutschland</title>
   </head>
   <body>
     <slot />
