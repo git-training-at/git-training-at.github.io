@@ -39,6 +39,14 @@ const siteName = 'Git Trainings in Wien, Österreich und Deutschland';
     <meta name="google-site-verification" content="7OvHhnrgV7Wct9c5QwNoveyeqIEk_0cNZRKWStPW7tg" />
   </head>
   <body>
-    <slot />
+    <div class="min-h-screen flex flex-col">
+      <main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16 max-w-4xl prose">
+        <slot />
+      </main>
+
+      <footer class="flex-grow container border-t border-gray-200 mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 lg:py-8 max-w-4xl text-gray-600">
+        <p>&copy; 2014-2025 Fritz Grabo und Christoph Lupprich</p>
+      </footer>
+    </div>
   </body>
 </html>
