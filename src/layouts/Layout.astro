@@ -1,6 +1,5 @@
 ---
 import "../styles/global.css";
-import "@fontsource-variable/inter";
 
 const { title, description } = Astro.props;
 
@@ -28,6 +27,10 @@ const siteName = 'Git Trainings in Wien, Österreich und Deutschland';
     <meta name="twitter:url" content={canonicalURL} />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap" rel="stylesheet">
 
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
